@@ -4,7 +4,6 @@
     <!-- Basic Page Needs
     	================================================== -->
     	<meta charset="<?php bloginfo('charset');?>">
-    	<title><?php bloginfo('name');?> <?php bloginfo('description')?></title>
     	<meta name="description" content="Free Responsive Html5 Css3 Templates | Zerotheme.com">
     	<meta name="author" content="www.zerotheme.com">
 
@@ -48,6 +47,7 @@
 		  });
 		});
 	</script>	
+	<?php wp_head();?>
 </head>
 
 <body class="home-page">
