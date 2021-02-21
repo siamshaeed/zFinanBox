@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html <?php language_attributes();?> > <!--<![endif]-->
 <head>
     <!-- Basic Page Needs
     	================================================== -->
@@ -13,21 +13,21 @@
 
     <!-- CSS
     	================================================== -->
-    	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/zerogrid.css">
-    	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css">
-    	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/responsiveslides.css">
+    	<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri());?>/css/zerogrid.css">
+    	<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri());?>/css/style.css">
+    	<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri());?>/css/responsiveslides.css">
     	<!-- Custom Fonts -->
-    	<link href="<?php echo get_template_directory_uri();?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    	<link href="<?php echo esc_url(get_template_directory_uri());?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     	<!-- Owl Carousel Assets -->
-    	<link href="<?php echo get_template_directory_uri();?>/owl-carousel/owl.carousel.css" rel="stylesheet">
+    	<link href="<?php echo esc_url(get_template_directory_uri());?>/owl-carousel/owl.carousel.css" rel="stylesheet">
     	<!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
     	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/menu.css">
-    	<script src="<?php echo get_template_directory_uri();?>/js/jquery183.min.js"></script>
-    	<script src="<?php echo get_template_directory_uri();?>/js/script.js"></script>
+    	<script src="<?php echo esc_url(get_template_directory_uri());?>/js/jquery183.min.js"></script>
+    	<script src="<?php echo esc_url(get_template_directory_uri());?>/js/script.js"></script>
 
-    	<script src="<?php echo get_template_directory_uri();?>/js/jquery-latest.min.js"></script>
-    	<script src="<?php echo get_template_directory_uri();?>/js/responsiveslides.min.js"></script>
+    	<script src="<?php echo esc_url(get_template_directory_uri());?>/js/jquery-latest.min.js"></script>
+    	<script src="<?php echo esc_url(get_template_directory_uri());?>/js/responsiveslides.min.js"></script>
     	<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
