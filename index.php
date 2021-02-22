@@ -4,18 +4,17 @@
 	<!-- Slideshow -->
 	<div class="callbacks_container">
 		<ul class="rslides" id="slider">
-
+			<!-- slider add -->
 			<?php 
 				$slider = new WP_Query(array('post_type'=>'zfinanbox'));
 				while($slider->have_posts()){
 					$slider->the_post();
 			 ?>	
-
 			<li>
 				<?php the_post_thumbnail() ?>
 				<div class="caption">
-					<h1>SED UT PERSPICIATEIS UNDE OMNIS</h1>
-					<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <br>sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</span>
+					<h1> <?php the_title(); ?> </h1>
+					<span>Here add description</span>
 				</div>
 			</li>
 

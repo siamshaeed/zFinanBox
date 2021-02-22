@@ -88,12 +88,7 @@
 									<li class='last'><a href='#'><span>Sub Item</span></a></li>
 								</ul>
 							</li>
-							<li class='has-sub'><a href='#'><span>Item 2</span></a>
-								<ul>
-									<li><a href='#'><span>Sub Item</span></a></li>
-									<li class='last'><a href='#'><span>Sub Item</span></a></li>
-								</ul>
-							</li>
+							<li class='has-sub'><a href='#'><span>Item 2</span></a></li>
 						</ul>
 					</li>
 					<li><a href='archive.html'><span>Archive</span></a></li>
