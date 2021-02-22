@@ -4,27 +4,23 @@
 	<!-- Slideshow -->
 	<div class="callbacks_container">
 		<ul class="rslides" id="slider">
+
+			<?php 
+				$slider = new WP_Query(array('post_type'=>'zfinanbox'));
+				while($slider->have_posts()){
+					$slider->the_post();
+			 ?>	
+
 			<li>
-				<img src="<?php echo get_template_directory_uri();?>/images/slideshow-image1.jpg" alt="">
+				<?php the_post_thumbnail() ?>
 				<div class="caption">
 					<h1>SED UT PERSPICIATEIS UNDE OMNIS</h1>
 					<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <br>sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</span>
 				</div>
 			</li>
-			<li>
-				<img src="<?php echo get_template_directory_uri();?>/images/slideshow-image2.jpg" alt="">
-				<div class="caption">
-					<h1>TEMPORIBUS AUTEM QUIBUSDAM ET AUT</h1>
-					<span>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis <br> voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</span>
-				</div>
-			</li>
-			<li>
-				<img src="<?php echo get_template_directory_uri();?>/images/slideshow-image3.jpg" alt="">
-				<div class="caption">
-					<h1>AENEAN FEUGIAT IN ANTE</h1>
-					<span >Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy</span>
-				</div>
-			</li>
+
+		<?php } ?>
+
 		</ul>
 	</div>
 	<div class="clear"></div>

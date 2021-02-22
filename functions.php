@@ -35,5 +35,6 @@ register_post_type('zfinanbox',array(
 }
 
 
+//Hook
 add_action('after_setup_theme','zfinanbox_default_functions');
 ?>
