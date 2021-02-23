@@ -14,12 +14,10 @@
 				<?php the_post_thumbnail() ?>
 				<div class="caption">
 					<h1> <?php the_title(); ?> </h1>
-					<span>Here add description</span>
+					<span><?php the_content(); ?></span>
 				</div>
 			</li>
-
 		<?php } ?>
-
 		</ul>
 	</div>
 	<div class="clear"></div>
