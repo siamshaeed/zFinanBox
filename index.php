@@ -115,9 +115,9 @@
 											<?php the_post_thumbnail(); ?>
 										</div>
 										<div class="box-item-content">
-											<p><?php the_author(); ?> | <?php the_time('d F, Y | g:i a'); ?> | <?php comments_popup_link(); ?> </p>
+											<p><?php the_author(); ?> | <?php the_time('d F, Y | g:i a'); ?></p>
 											<h4><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4>
-											<p><?php the_content(); ?></p>
+											<p><?php read_more(); ?></p>
 											<button><a href="<?php the_permalink(); ?>" style="padding: 10px">Read More</a></button>
 										</div>
 									</div>

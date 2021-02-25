@@ -28,7 +28,17 @@ function zfinanbox_default_functions(){
 
 //Register Menu
 	register_nav_menu('header-menu',__( 'Header Menu', 'zfinanbox'));
+
+	//Post read more / less content
+	function read_more(){
+		$post_content = explode(" ", get_the_content());
+		$less_content = array_slice($post_content, 0, 20);
+		echo implode(" ", $less_content);
+	}
+
+
 }
+
 
 //Hook
 add_action('after_setup_theme','zfinanbox_default_functions');

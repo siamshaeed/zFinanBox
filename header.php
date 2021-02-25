@@ -80,12 +80,12 @@
 
 			<!-- displays a navigation menu code -->
 			<?php 
-				wp_nav_menu(array(
+			wp_nav_menu(array(
 				'theme_location'=>'header-menu',
 				'container_id'=>'cssmenu',
 				'add_li_class'=>'has-sub',
 			));
-			 ?>
+			?>
 			<div id='cssmenu'>
 				<!-- remove ul and li here -->
 			</div>
