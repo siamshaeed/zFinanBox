@@ -26,53 +26,6 @@
 <!--////////////////////////////////////Container-->
 <section id="container">
 	<div class="wrap-container">
-		<!-----------------content-box-1-------------------->
-		<section class="content-box box-1">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="col-1-3">
-						<div class="wrap-col">
-							<div class="box-item">
-								<img src="<?php echo get_template_directory_uri();?>/images/1.jpg">
-								<h2>Text Heading</h2>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-								<a href="single.html">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-1-3">
-						<div class="wrap-col">
-							<div class="box-item">
-								<img src="<?php echo get_template_directory_uri();?>/images/2.jpg">
-								<h2>Text Heading</h2>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-								<a href="single.html">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-1-3">
-						<div class="wrap-col">
-							<div class="box-item">
-								<img src="<?php echo get_template_directory_uri();?>/images/3.jpg">
-								<h2>Text Heading</h2>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-								<a href="single.html">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-----------------content-box-2-------------------->
-		<section class="content-box boxstyle-1 box-2">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="box-item">
-						<blockquote><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p></blockquote>
-					</div>
-				</div>
-			</div>
-		</section>
 		<!-----------------content-box-3-------------------->
 		<section class="content-box box-3">
 			<div class="zerogrid">

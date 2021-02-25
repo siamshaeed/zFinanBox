@@ -30,7 +30,6 @@ function zfinanbox_default_functions(){
 	register_nav_menu('header-menu',__( 'Header Menu', 'zfinanbox'));
 }
 
-
 //Hook
 add_action('after_setup_theme','zfinanbox_default_functions');
 ?>

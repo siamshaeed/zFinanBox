@@ -87,7 +87,7 @@
 			</div>
 			<div class="copyright">
 				<div class="zerogrid wrapper">
-					Copyright @ zFinanBox - Designed by <a href="https://www.zerotheme.com">ZEROTHEME</a>
+					Copyright @ siamshaeed - Designed by <a href="https://www.github.com/siamshaeed">siamshaeed</a>
 					<ul class="quick-link">
 						<li><a href="#">Privacy Policy</a></li>
 						<li><a href="#">Terms of Use</a></li>
