@@ -50,7 +50,7 @@
 	<?php wp_head();?>
 </head>
 
-<body class="home-page">
+<body class="home-page" <?php body_class();?>>
 	<div class="wrap-body">
 		<header>
 			<div class="top-bar">
@@ -77,22 +77,15 @@
 			<div class="header-logo">
 				<a href="index.html"><img src="<?php echo get_template_directory_uri();?>/images/logo.png"></a>
 			</div>
-			<div id='cssmenu' >
-				<ul>
-					<li class="active"><a href='index.html'><span>zFinanBox</span></a></li>
-					<li class=' has-sub'><a href='#'><span>Category</span></a>
-						<ul>
-							<li class='has-sub'><a href='#'><span>Item 1</span></a>
-								<ul>
-									<li><a href='#'><span>Sub Item</span></a></li>
-									<li class='last'><a href='#'><span>Sub Item</span></a></li>
-								</ul>
-							</li>
-							<li class='has-sub'><a href='#'><span>Item 2</span></a></li>
-						</ul>
-					</li>
-					<li><a href='archive.html'><span>Archive</span></a></li>
-					<li><a href='single.html'><span>About</span></a></li>
-					<li class='last'><a href='contact.html'><span>Contact</span></a></li>
-				</ul>
+
+			<!-- displays a navigation menu code -->
+			<?php 
+				wp_nav_menu(array(
+				'theme_location'=>'header-menu',
+				'container_id'=>'cssmenu',
+				'add_li_class'=>'has-sub',
+			));
+			 ?>
+			<div id='cssmenu'>
+				<!-- remove ul and li here -->
 			</div>

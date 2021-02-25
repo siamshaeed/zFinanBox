@@ -11,27 +11,23 @@ function zfinanbox_default_functions(){
 //post thumbnails add
 	add_theme_support('post_thumbnails');
 
-//Register Menu
-register_nav_menus(array(
-	'mainmenu' => __('Mani Menu','zfinanbox'),
-	'secondaymenu' => __('Secondary Menu', 'zfinanbox')
-));
-
 //Slider thumbnails add
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-thumbnails', array( 'post' ) );    // Posts only       
 	add_theme_support( 'post-thumbnails', array( 'page' ) );    // Pages only
 	add_theme_support( 'post-thumbnails', array( 'post', 'slider' ) ); // Posts and Movies
 //Register for slider
-register_post_type('zfinanbox',array(
-	'labels' => array(
-		'name' => 'My Sliders',
-		'add_new_item' =>'Add Your Slider Here'
-	),
-	'public' => true,
-	'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
-));
+	register_post_type('zfinanbox',array(
+		'labels' => array(
+			'name' => 'My Sliders',
+			'add_new_item' =>'Add Your Slider Here'
+		),
+		'public' => true,
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
+	));
 
+//Register Menu
+	register_nav_menu('header-menu',__( 'Header Menu', 'zfinanbox'));
 }
 
 
