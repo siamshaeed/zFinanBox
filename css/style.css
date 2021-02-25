@@ -148,7 +148,7 @@ header .top-bar .top-social i.fa{margin: 0;font-size: 19px;}
  }
 
 .content-box.box-3 .box-item {margin: auto auto 30px;text-align: center;}
-.content-box.box-3 .box-item img{margin: 0 auto;display: block;max-width: 200px;height: auto;-webkit-transition: all .5s ease; /* Safari and Chrome */-moz-transition: all .5s ease; /* Firefox */-ms-transition: all .5s ease; /* IE 9 */-o-transition: all .5s ease; /* Opera */transition: all .5s ease;}
+.content-box.box-3 .box-item img{margin: 0 auto;display: block;max-width: 200px; height: 220px;-webkit-transition: all .5s ease; /* Safari and Chrome */-moz-transition: all .5s ease; /* Firefox */-ms-transition: all .5s ease; /* IE 9 */-o-transition: all .5s ease; /* Opera */transition: all .5s ease;}
 .content-box.box-3 .box-item h3{margin: 10px 0 0;}
 .content-box.box-3 .zoom-container{margin: 0;}
 .content-box.box-3 .box-item:hover .box-item-content h3{color: #FFE401;}

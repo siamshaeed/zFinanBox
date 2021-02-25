@@ -6,18 +6,18 @@
 		<ul class="rslides" id="slider">
 			<!-- slider add -->
 			<?php 
-				$slider = new WP_Query(array('post_type'=>'zfinanbox'));
-				while($slider->have_posts()){
-					$slider->the_post();
-			 ?>	
-			<li>
-				<?php the_post_thumbnail() ?>
-				<div class="caption">
-					<h1> <?php the_title(); ?> </h1>
-					<span><?php the_content(); ?></span>
-				</div>
-			</li>
-		<?php } ?>
+			$slider = new WP_Query(array('post_type'=>'zfinanbox'));
+			while($slider->have_posts()){
+				$slider->the_post();
+				?>	
+				<li>
+					<?php the_post_thumbnail() ?>
+					<div class="caption">
+						<h1> <?php the_title(); ?> </h1>
+						<span><?php the_content(); ?></span>
+					</div>
+				</li>
+			<?php } ?>
 		</ul>
 	</div>
 	<div class="clear"></div>
@@ -106,54 +106,29 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-1-3">
-							<div class="wrap-col">
-								<div class="box-item">
-									<div class="zoom-container">
-										<img src="<?php echo get_template_directory_uri();?>/images/1.jpg" />
-									</div>
-									<div class="box-item-content">
-										<h4>LOREM IPSUM DOLOR</h4>
-										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurrere.</p>
-										<a href="single.html">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col">
-								<div class="box-item">
-									<div class="zoom-container">
-										<img src="<?php echo get_template_directory_uri();?>/images/2.jpg" />
-									</div>
-									<div class="box-item-content">
-										<h4>LOREM IPSUM DOLOR</h4>
-										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurrere.</p>
-										<a href="single.html">Read More</a>
+
+						<?php while (have_posts()) : the_post();?>
+							<div class="col-1-3">
+								<div class="wrap-col">
+									<div class="box-item">
+										<div class="zoom-container">
+											<?php the_post_thumbnail(); ?>
+										</div>
+										<div class="box-item-content">
+											<p><?php the_author(); ?> | <?php the_time('d F, Y | g:i a'); ?> | <?php comments_popup_link(); ?> </p>
+											<h4><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4>
+											<p><?php the_content(); ?></p>
+											<button><a href="<?php the_permalink(); ?>" style="padding: 10px">Read More</a></button>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col">
-								<div class="box-item">
-									<div class="zoom-container">
-										<img src="<?php echo get_template_directory_uri();?>/images/3.jpg" />
-									</div>
-									<div class="box-item-content">
-										<h4>LOREM IPSUM DOLOR</h4>
-										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurrere.</p>
-										<a href="single.html">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
+						<?php endwhile; ?>
+
 					</div>
 				</div>
 			</div>
 		</section>
-
-
 		<!-----------------content-box-6-------------------->
 		<section class="content-box box-6">
 			<div class="zerogrid" style="width: 100%;">
