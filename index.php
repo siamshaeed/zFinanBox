@@ -95,7 +95,7 @@
 			</div>
 		</section>
 		<!-----------------content-box-4-------------------->
-		<section class="content-box boxstyle-2 box-4">
+		<section class="content-box boxstyle-2 box-4" id="myblog">
 			<div class="zerogrid">
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="header">
@@ -107,7 +107,13 @@
 					</div>
 					<div class="row">
 
-						<?php while (have_posts()) : the_post();?>
+						<?php 
+						$args = array(
+							'post_type'=>'post',
+							'posts_per_page'=>3
+						);
+						$query=new WP_Query($args);
+						while ($query->have_posts()) : $query->the_post();?>
 							<div class="col-1-3">
 								<div class="wrap-col">
 									<div class="box-item">
