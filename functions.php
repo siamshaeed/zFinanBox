@@ -11,11 +11,20 @@ function zfinanbox_default_functions(){
 //post thumbnails add
 	add_theme_support('post_thumbnails');
 
-//Slider thumbnails add
+//theme support for thumbnails add
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-thumbnails', array( 'post' ) );    // Posts only       
 	add_theme_support( 'post-thumbnails', array( 'page' ) );    // Pages only
 	add_theme_support( 'post-thumbnails', array( 'post', 'slider' ) ); // Posts and Movies
+//theme support for Logo
+	add_theme_support( 'custom-logo', array(
+	
+	// style change
+		'height'      => 120,
+		'width'       => 250,
+		'flex-width' => true,
+	) );
+
 //Register for slider
 	register_post_type('zfinanbox',array(
 		'labels' => array(

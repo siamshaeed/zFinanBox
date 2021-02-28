@@ -75,7 +75,13 @@
 				</div>
 			</div>
 			<div class="header-logo">
-				<a href="index.html"><img src="<?php echo get_template_directory_uri();?>/images/logo.png"></a>
+				<!-- for logo display -->
+				<?php 
+					if ( function_exists( 'the_custom_logo' ) ) {
+						the_custom_logo();
+					}
+				 ?>
+				<!-- <a href="index.html"><img src="<?php echo get_template_directory_uri();?>/images/logo.png"></a> -->
 			</div>
 
 			<!-- displays a navigation menu code -->
