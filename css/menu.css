@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 #cssmenu {
-  background: #FFE401;
+  background: #A8140A;
   margin: 0;
   width: auto;
   padding: 0;
@@ -57,7 +57,7 @@
   -ms-transition: max-height 0.4s ease-out;
   -o-transition: max-height 0.4s ease-out;
   transition: max-height 0.4s ease-out;
-  background: #F3D600;
+  background: #A8140A;
 }
 #cssmenu ul li ul li.has-sub:after {
   display: block;

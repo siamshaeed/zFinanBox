@@ -18,8 +18,8 @@ function zfinanbox_default_functions(){
 	add_theme_support( 'post-thumbnails', array( 'post', 'slider' ) ); // Posts and Movies
 //theme support for Logo
 	add_theme_support( 'custom-logo', array(
-		'height'      => 120,
-		'width'       => 250,
+		'height'      => 100,
+		'width'       => 400,
 		'flex-width' => true,
 	) );
 
